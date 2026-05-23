@@ -1,0 +1,31 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "React Conference 2026",
+      "description": "Learn advanced React concepts",
+      "category": "Technology",
+      "date": "2026-06-15",
+      "time": "09:00 AM",
+      "location": "Toronto",
+      "venue": "Metro Convention Centre",
+      "image": "https://picsum.photos/400/200",
+      "organizerName": "Tech Corp",
+      "ticketTypes": [
+        {
+          "id": "1",
+          "name": "General",
+          "price": 99,
+          "available": 100
+        },
+        {
+          "id": "2",
+          "name": "VIP",
+          "price": 299,
+          "available": 20
+        }
+      ]
+    }
+  ],
+  "bookings": []
+}
