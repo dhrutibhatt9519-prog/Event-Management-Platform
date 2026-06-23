@@ -11,6 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
+.db.json.tmp
+*-server.log
+*-server.err.log
+vite-dev.log
+vite-dev.err.log
 
 # Editor directories and files
 .vscode/*

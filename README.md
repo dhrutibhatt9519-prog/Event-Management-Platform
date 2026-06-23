@@ -1,17 +1,34 @@
-# Event-Management-Platform
-# React + Vite
+# Eventure - Event Management Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite project for browsing events, booking tickets, managing bookings, creating events, and saving user preferences.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Event listing at `/` with TanStack Query caching, deferred search, category/date/price filters, sorting, and optimistic favorites.
+- Event details at `/events/:id` with route loader data and streamed slow extras through `Suspense`/`Await`.
+- Booking flow at `/book/:eventId` with `useReducer`, progress steps, validation, optimistic confirmation, and rollback-ready Query mutation.
+- My bookings at `/my-bookings` with stale/cache timing, upcoming/past/cancelled filters, loading/error states, and optimistic cancellation.
+- Create event wizard at `/create-event` using Redux Toolkit, dynamic ticket rows, validation, localStorage draft saving, preview, and publish.
+- Profile at `/profile` with ThemeContext light/dark mode and simulated user preferences.
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run server
+```
 
-## Expanding the ESLint configuration
+In a second terminal:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run dev
+```
+
+Open the Vite URL, usually `http://localhost:5173`.
+
+## Checks
+
+```bash
+npm run lint
+npm run build
+```
