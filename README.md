@@ -2,6 +2,10 @@
 
 React + Vite project for browsing events, booking tickets, managing bookings, creating events, and saving user preferences.
 
+## Live Demo
+
+🔗 [https://accountbridge-ai.vercel.app](https://event-management-platform-7ec2bgpux.vercel.app/)
+
 ## Features
 
 - Event listing at `/` with TanStack Query caching, deferred search, category/date/price filters, sorting, and optimistic favorites.
